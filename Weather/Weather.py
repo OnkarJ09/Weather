@@ -1,4 +1,4 @@
-import requests
+﻿import requests
 import json
 
 def get_weather(location):
@@ -10,6 +10,6 @@ def get_weather(location):
     temperature = str(data['main']['temp'])
     humidity = str(data['main']['humidity'])
     weather_conditions = str(data['weather'][0]['description'])
-    print(f"the weather condition in '{location}' city is:'{weather_conditions}' tempearture is:'{temperature}�C' and humidity is:'{humidity}%'")
+    print(f"the weather condition in '{location}' city is:'{weather_conditions}' tempearture is:'{temperature}°C' and humidity is:'{humidity}%'")
 
-    get_weather(input("Enter the location of the city you want to know the weather of: "))
+get_weather(input("Enter the location of the city you want to know the weather of: "))

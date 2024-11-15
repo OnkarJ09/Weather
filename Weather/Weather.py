@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QLineEdi
 
 
 def get_weather(location):
-    api_key = '1b86abaedd0604dce27bfbc2b40ae211'  # Replace with your actual API key
+    api_key = 'YourAPIKey'  # Replace with your actual API key
     base_url = 'http://api.openweathermap.org/data/2.5/weather'
     params = {'q': location, 'appid': api_key, 'units': 'metric'}
 
